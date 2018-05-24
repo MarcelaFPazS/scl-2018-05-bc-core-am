@@ -1,1 +1,29 @@
 /* Acá va tu código */
+
+body {
+    background-image: url(../img/img08.png);
+    background-color:white;
+    padding: 100px 200px;
+    
+ 
+ }
+
+
+h1{
+    color:black;
+    font-size:300%;
+ 
+}
+
+h2{
+    color:royalblue;
+}
+
+
+.first-section{
+    text-align: center;
+}
+
+.second-section{
+    text-align: center
+}
