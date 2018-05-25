@@ -2,21 +2,30 @@
 
 body {
     background-image: url(../img/img08.png);
-    background-color:white;
-    padding: 100px 200px;
+    background-color:rgba(20, 192, 178, 0.445);
+    padding: 10npx 200px;
     
  
  }
 
+ img{
+     width: 15%;
+ }
+
+ 
 
 h1{
     color:black;
     font-size:350%;
  
 }
+ 
+.number{
+    margin: 1%;
+}
 
 h2{
-    color:royalblue;
+    color:rgb(5, 117, 117);
 }
 
 
