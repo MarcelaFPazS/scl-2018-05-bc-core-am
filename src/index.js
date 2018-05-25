@@ -2,7 +2,7 @@
 function Function (){
     var user = document.getElementById("name").value;
     var p = document.getElementById("welcomeMsje");
-    p.innerHTML =   user + " Quedas invitada/o a un evento para esteban, si quieres más información decifra el código";
+    p.innerHTML =   user + " escribe codifica y decodifica... ahora nadie sabra tus secretos";
 }
 
 function Function2 (){
