@@ -1,31 +1,56 @@
 window.cipher = {
-  encode: (/*aca va el nombre*/) => {
+  encode: (codEnviado, codNumeros) => {
     /* Acá va tu código funcion */
-  },
-  decode: () => {
-    /* Acá va tu código */
-  }
-}
+    let result="";
+    for (let i=0; i<codEnviado.length; i++){
+    let posicion = codEnviado.charCodeAt(i);
 
-
-const encode = () =>{
-  const name = " aqui va el nombre la const"
-  let result="";
-  for (let i=0; i<name.length; i++){
-    var textChar = ((name.charCodeAt(i) - 65 +3) %26) + 65;
-    var textCipher = string.fromCharCode(textChar);
-
-  }
-}
-
-
-
-const decode = () =>{
-  const name = "lala"
-  let result="";
-  for (let i=0; i<name.length; i++){
-    var textChar = ((name.charCodeAt(i) - 65 -3) %26) + 65;
-    var textCipher = string. fromCharCode(textChar);
+    /*valores para letras Mayusculas */
+    if ((posicion >=65)&&(posicion<=90)){
+      let formula= (posicion-65 + parseInt(codNumeros)) % 26 +65;
+      result += String.fromCharCode(formula);
+    }
     
+  /*valores para letras minusculas */
+    if((posicion >=97) &&(posicion<=122)){
+      let formula=(posicion -97 + parseInt(codNumeros))% 26 + 97;
+      result += String.fromCharCode(formula);
+    }
+
+
+    }
+return result;
+
+  }, 
+
+
+  decode: (codEnviado, codNumeros) => {
+    /* Acá va tu código */
+    let result2="";
+    for (let i=0; i<codEnviado.length; i++){
+    let posicion = codEnviado.charCodeAt(i);
+
+    /*valores para letras Mayusculas */
+    if ((posicion >=65)&&(posicion<=
+      90)){
+      let formula= (posicion -65 - parseInt(codNumeros)) % 26 + 65;
+      result2 += String.fromCharCode(formula);
+    }
+    
+  /*valores para letras minusculas */
+    if((posicion >=97) &&(posicion<=122)){
+      let formula=(posicion -122 - parseInt(codNumeros))% 26 + 122;
+      result2 += String.fromCharCode(formula);
+    }
+
+
+    }
+return result2;
+
   }
+  
 }
+
+
+
+

@@ -16,36 +16,46 @@
   <section class="first-section">
     <img src="../img/img010.png" style="max-width: 100%; height: auto;">
     <h1> <strong>Espero tú Mensaje</strong></h1>
-    <h2>Introduce tu Nombre y enterate</h2>
+    <h2>Introduce tu Nombre y entérate</h2>
+    <input id= "name" type = "name" placeholder="Tu Nombre AQUI">
+    <button id= "send" onclick= "Function()">CLICK AQUI</button>
+    <p id = "welcomeMsje2"></p>
   </section>
 </header>
 
-  <!-- segunda seccion , imput paradar indicaciones de juego, mediante la función onclick -->
+
+<!-- seccion 2 para imput de máximo y minimo para ingresar numero de desplazamiento de cifrado , primera caja de contenido-->
 <section class="second-section">
-  <input id= "name" type = "name" placeholder="Tu Nombre AQUI">
-  <button id= "send" onclick= "Function()">CLICK AQUI</button>
-  <p id = "welcomeMsje2"></p>
-  <textarea rows ="4" cols="50"></textarea>
-</section>
+<!-- div selector de numeros -->
+  <div class="marcador">
+   <input id ="ndecode" type="number" min="1" max="27">
+<!-- primer cudro de decodificacion -->
+  </div>
+  <div class="seccion1">
+   <textarea class= "cuadrodetexto" id="primertextocuadro" placeholder="Ingresa tu texto AQUI"></textarea>
+   <div id= "resultadocodificado"></div>
+   <p id = "welcomeMsje3"></p>
+<!-- segundo cuadro de decodificacion -->
 
-<!-- seccion 3 para imput de máximo y minimo para ingresar numero de desplazamiento de cifrado , primera caja de contenido-->
-<section class="three-section">
-  <input class ="number" type="number" min="1" max="27">
-  <button id= "send" onclick= "Function2()">CODIFICAR</button>
-  <p id = "welcomeMsje3"></p>
-  <textarea rows ="4" cols="50"></textarea>
-</section>
-
-<!-- seccion 4, segunda caja de entrada de codigos  -->
-<section class="four-section">
-   <!-- <button id= "send" onclick= "Function2()">DECODIFICAR</button>-->
-   <input class ="number" type="number" min="1" max="27">
-   <button id= "send" onclick= "Function2()">DECODIFICAR</button>
-    <!-- boton de color, evaluar si 
-    <input style="background-color: rgb(0, 255, 179)" value="DECODIFICAR" name="button" type="submit"/>-->
+  <div>
+      <button id= "enviarcode" >CODIFICAR</button>
+      <button id= "traerdecode" >DECODIFICAR </button>
+  </div>
+ </div>
+  <div class="seccion2">
+   <textarea class="cuadrodetexto" id="segundotextocuadro" placeholder="Ingresa tu texto AQUI"></textarea>
+   <div id= "resultadodecodificado"></div>
    <p id = "welcomeMsje4"></p>
+ </div>
 </section>
+
+
+
  
+
+<section>
+  <p id="Resultado"></p>
+</section>
 
 
 <script src="cipher.js"></script>
