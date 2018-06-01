@@ -61,6 +61,7 @@ h2{
 
 .cuadrodetexto{
   resize: none;
+  
 }
 
 .send{
@@ -70,6 +71,10 @@ h2{
   border-radius: 15px;
 
 }
+
+
+
+
 #send {
   background-color: rgb(199, 131, 245); 
   border: double rgba(136, 231, 179, 1);
@@ -81,3 +86,25 @@ h2{
   font-size: 10px;
   
   }
+#enviarcode{
+  background-color: rgb(199, 131, 245); 
+  border: double rgba(136, 231, 179, 1);
+  border-radius: 15px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+
+}
+#traerdecode{
+  background-color: rgb(199, 131, 245); 
+  border: double rgba(136, 231, 179, 1);
+  border-radius: 15px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+
+}
