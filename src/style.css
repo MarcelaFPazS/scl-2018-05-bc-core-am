@@ -1,7 +1,7 @@
 /* Acá va tu código */
 
 body {
-  background-image: url(../img/img08.png);
+  background-image: url(../src/img/img08.png);
   background-color:rgba(20, 192, 178, 0.445);
   padding: 10npx 200px;
   text-align: center;
@@ -61,7 +61,7 @@ h2{
 
 .cuadrodetexto{
   resize: none;
-  
+
 }
 
 .send{
