@@ -19,6 +19,7 @@ const cifrado= document.getElementById("enviarcode").addEventListener("click",()
   let codNumeros = document.getElementById("ndecode").value;
   /*para enlazar el texto codificado*/
   let resultEncoded = window.cipher.encode(codEnviado, codNumeros); 
+  /* para llamar al html y que la respuesta se vea reflejado en el segundocuadro */
   document.getElementById("segundotextocuadro").innerHTML = resultEncoded;
 })
 
