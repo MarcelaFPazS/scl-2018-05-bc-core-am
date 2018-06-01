@@ -1,0 +1,110 @@
+/* Acá va tu código */
+
+body {
+  background-image: url(../src/img/img08.png);
+  background-color:rgba(20, 192, 178, 0.445);
+  padding: 10npx 200px;
+  text-align: center;
+ }
+
+ /* medidas imagen logo */
+ img{
+  width: 15%;
+ }
+
+ 
+
+h1{
+  color:black;
+  font-size:350%;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.number{
+  margin: 1%;
+}
+
+h2{
+  color:rgb(5, 117, 117);
+}
+
+.resultadocodificado{
+  border: thin solid peru;
+  text-align: center;
+}
+
+.first-section{
+  text-align: center;
+}
+
+.second-section{
+  text-align: center
+}
+.ndecode{
+  text-align: center;
+}
+
+.marcador{
+  text-align: center;
+  padding: 2%;
+}
+
+.seccion1{
+  text-align: center;
+  
+}
+
+.seccion2{
+  text-align: center;
+
+}
+
+.cuadrodetexto{
+  resize: none;
+
+}
+
+.send{
+  border-radius: 15px;
+}
+.button{
+  border-radius: 15px;
+
+}
+
+
+
+
+#send {
+  background-color: rgb(199, 131, 245); 
+  border: double rgba(136, 231, 179, 1);
+  border-radius: 15px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  
+  }
+#enviarcode{
+  background-color: rgb(199, 131, 245); 
+  border: double rgba(136, 231, 179, 1);
+  border-radius: 15px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+
+}
+#traerdecode{
+  background-color: rgb(199, 131, 245); 
+  border: double rgba(136, 231, 179, 1);
+  border-radius: 15px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+
+}

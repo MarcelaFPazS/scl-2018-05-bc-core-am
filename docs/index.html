@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cifrado cesar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+<header>
+  <!-- primera sección, logotipo, titulo, e indicaciones -->
+  <section class="first-section">
+    <img src="../src/img/img010.png" style="max-width: 100%; height: auto;">
+    <h1> <strong>Espero tú Mensaje</strong></h1>
+    <h2>Introduce tu Nombre y entérate</h2>
+    <input id= "name" type = "name" placeholder="Tu Nombre AQUI">
+    <button id= "send" onclick= "Function()">CLICK AQUI</button>
+    <p id = "welcomeMsje2"></p>
+  </section>
+</header>
+
+
+<!-- seccion 2 para imput de máximo y minimo para ingresar numero de desplazamiento de cifrado , primera caja de contenido-->
+<section class="second-section">
+<!-- div selector de numeros -->
+  <div class="marcador">
+   <input id ="ndecode" type="number" min="1" max="27">
+<!-- primer cudro de decodificacion -->
+  </div>
+  <div class="seccion1">
+   <textarea class= "cuadrodetexto" id="primertextocuadro" placeholder="Ingresa tu texto AQUI"  rows="5" cols="50"></textarea>  <!-- class para resize-->
+    <div id= "resultadocodificado"></div>
+   <p id = "welcomeMsje3"></p>
+<!-- segundo cuadro de decodificacion -->
+
+<!-- botones de codificado y decodificado -->
+  <div>
+      <button id= "enviarcode" >CODIFICAR</button>
+      <button id= "traerdecode" >DECODIFICAR </button>
+  </div>
+ </div>
+  <div class="seccion2">
+   <textarea class="cuadrodetexto" id="segundotextocuadro" placeholder="Ingresa tu texto AQUI"  rows="5" cols="50"></textarea>
+    <div id= "resultadodecodificado"></div>
+   <p id = "welcomeMsje4"></p>
+ </div>
+</section>
+
+
+
+ 
+
+<section>
+  <p id="Resultado"></p>
+</section>
+
+
+<script src="cipher.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
